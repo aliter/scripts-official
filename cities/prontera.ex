@@ -1,4 +1,4 @@
-object Guard
+module Guard
   mixin NPC
 
   name "Guard"
@@ -16,7 +16,7 @@ end
 #Guard.register({'map: "prontera", 'coordinates: {47, 339}, 'direction: 'southeast})
 
 
-object Shuger
+module Shuger
   mixin NPC
 
   name "Shuger"
@@ -48,7 +48,7 @@ object Shuger
 end
 
 
-object Tono
+module Tono
   mixin NPC
 
   name "Tono"
@@ -84,7 +84,7 @@ object Tono
 end
 
 
-object Merideth
+module Merideth
   mixin NPC
 
   name "Meredith"
@@ -112,7 +112,7 @@ object Merideth
 end
 
 
-object YuPi
+module YuPi
   mixin NPC
 
   name "YuPi"
