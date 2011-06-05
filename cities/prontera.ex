@@ -10,10 +10,10 @@ module Guard
     close
   end
 end
-#Guard.register({'map: "prontera", 'coordinates: {160, 130}, 'direction: 'north})
-#Guard.register({'map: "prontera", 'coordinates: {223, 99}, 'direction: 'northwest})
-#Guard.register({'map: "prontera", 'coordinates: {229, 104}, 'direction: 'southeast})
-#Guard.register({'map: "prontera", 'coordinates: {47, 339}, 'direction: 'southeast})
+Guard.register({'map: "prontera", 'coordinates: {160, 130}, 'direction: 'north})
+Guard.register({'map: "prontera", 'coordinates: {223, 99}, 'direction: 'northwest})
+Guard.register({'map: "prontera", 'coordinates: {229, 104}, 'direction: 'southeast})
+Guard.register({'map: "prontera", 'coordinates: {47, 339}, 'direction: 'southeast})
 
 
 module Shuger
