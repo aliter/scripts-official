@@ -114,9 +114,8 @@ module YoungMan2
     next
 
     say "[?]"
-    say "^3299CCNever think"
-    say "of such a thing..."
-    say "My son.^000000"
+    say colored("3299CC", "Never think of such a thing...")
+    say colored("3299CC", "My son.")
     next
 
     say display_name
