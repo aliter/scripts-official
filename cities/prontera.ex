@@ -1,5 +1,5 @@
 object Guard
-  proto NPC
+  mixin NPC
 
   name "Guard"
   sprite 403
@@ -10,14 +10,14 @@ object Guard
     close
   end
 end
-Guard.register({'map: "prontera", 'coordinates: {160, 130}, 'direction: 'north})
-Guard.register({'map: "prontera", 'coordinates: {223, 99}, 'direction: 'northwest})
-Guard.register({'map: "prontera", 'coordinates: {229, 104}, 'direction: 'southeast})
-Guard.register({'map: "prontera", 'coordinates: {47, 339}, 'direction: 'southeast})
+#Guard.register({'map: "prontera", 'coordinates: {160, 130}, 'direction: 'north})
+#Guard.register({'map: "prontera", 'coordinates: {223, 99}, 'direction: 'northwest})
+#Guard.register({'map: "prontera", 'coordinates: {229, 104}, 'direction: 'southeast})
+#Guard.register({'map: "prontera", 'coordinates: {47, 339}, 'direction: 'southeast})
 
 
 object Shuger
-  proto NPC
+  mixin NPC
 
   name "Shuger"
   sprite 98
@@ -49,7 +49,7 @@ end
 
 
 object Tono
-  proto NPC
+  mixin NPC
 
   name "Tono"
   sprite 97
