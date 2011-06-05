@@ -1,3 +1,12 @@
+% Included NPCs:
+% - Guard
+% - Shuger
+% - Tono
+% - Merideth
+% - YuPi
+% - YuNa
+
+
 module Guard
   mixin NPC
 
@@ -140,3 +149,44 @@ module YuPi
 end
 
 
+module YuNa
+  mixin NPC
+
+  name "YuNa"
+  sprite 700
+
+  register {
+    'map: "prontera",
+    'coordinates': {149, 202},
+    'direction: 'west
+  }
+
+  def main
+    say display_name
+    say "Behold..."
+    say "Mighty Odin!"
+    say "God of wisdom!"
+    say "God of war!"
+    next
+
+    say display_name
+    say "Here, in Rune-Midgard, we serve Odin, the fearsome god who sacrificed one of his eyes in order to acquire wisdom.";
+    next
+
+    say display_name
+    say "The statue you see behind of me is a sculpture of mighty Odin. But, it's a shame because it's such a bad likeness.";
+    next
+
+    say display_name
+    say "I mean, this statue is totally different from our image of Odin. I guess the sculptor took too many artistic liberties."
+    next
+
+    say display_name
+    say "I bet the first time you saw this statue, you thought, '^3355FFOh, what a nice muscle man on a horse^000000.'";
+    next
+
+    say display_name
+    say "But this statue is obviously not muscular enough, not godly enough to fairly represent a god! Maybe if he had a halo?"
+    close
+  end
+end
