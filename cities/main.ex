@@ -1,6 +1,2 @@
-module Cities
-  mixin NPC
-
-  load "prontera.ex"
-  load "payon.ex"
-end
+NPC.load "prontera.ex"
+NPC.load "payon.ex"
