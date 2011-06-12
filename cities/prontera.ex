@@ -15,7 +15,7 @@ module Guard
   map "prontera"
 
   def setup
-    register({'coordinates: {160, 130}, 'direction: 'north})
+    register({'coordinates: {160, 130}, 'direction: 'west})
     register({'coordinates: {223, 99}, 'direction: 'northwest})
     register({'coordinates: {229, 104}, 'direction: 'southeast})
     register({'coordinates: {47, 339}, 'direction: 'southeast})
