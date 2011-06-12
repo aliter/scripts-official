@@ -9,11 +9,14 @@ module Lady
 
   name "Lady"
   sprite 90
-  register {
+
+  def setup
+    register {
       'map: "payon",
       'coordinates: {246, 154},
       'direction: 'north
-  }
+    }
+  end
 
   def main
     say display_name
@@ -55,11 +58,14 @@ module YoungMan1
 
   name "Young Man"
   sprite 59
-  register {
-      'map: "payon"
+
+  def setup
+    register {
+      'map: "payon",
       'coordinates: {134, 211},
       'direction: 'south
-  }
+    }
+  end
 
   def main
     say display_name
@@ -93,11 +99,14 @@ module YoungMan2
 
   name "Young Man"
   sprite 88
-  register {
-      'map: "payon"
+
+  def setup
+    register {
+      'map: "payon",
       'coordinates: {173, 82},
       'direction: 'north
-  }
+    }
+  end
 
   def main
     say display_name

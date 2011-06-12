@@ -11,7 +11,15 @@ module Guard
   mixin NPC
 
   name "Guard"
-  sprite 403
+  sprite 105
+  map "prontera"
+
+  def setup
+    register({'coordinates: {160, 130}, 'direction: 'north})
+    register({'coordinates: {223, 99}, 'direction: 'northwest})
+    register({'coordinates: {229, 104}, 'direction: 'southeast})
+    register({'coordinates: {47, 339}, 'direction: 'southeast})
+  end
 
   def main
     say "[Prontera Guard]"
@@ -19,10 +27,6 @@ module Guard
     close
   end
 end
-Guard.register({'map: "prontera", 'coordinates: {160, 130}, 'direction: 'north})
-Guard.register({'map: "prontera", 'coordinates: {223, 99}, 'direction: 'northwest})
-Guard.register({'map: "prontera", 'coordinates: {229, 104}, 'direction: 'southeast})
-Guard.register({'map: "prontera", 'coordinates: {47, 339}, 'direction: 'southeast})
 
 
 module Shuger
@@ -31,11 +35,13 @@ module Shuger
   name "Shuger"
   sprite 98
 
-  register {
+  def setup
+    register {
       'map: "prontera",
       'coordinates: {101, 288},
       'direction: 'southwest
-  }
+    }
+  end
 
   def main
     say display_name
@@ -63,11 +69,13 @@ module Tono
   name "Tono"
   sprite 97
 
-  register {
-      'map: "prontera",
-      'coordinates: {54, 240},
-      'direction: 'east
-  }
+  def setup
+    register {
+        'map: "prontera",
+        'coordinates: {54, 240},
+        'direction: 'east
+    }
+  end
 
   def main
     say display_name
@@ -99,11 +107,13 @@ module Merideth
   name "Meredith"
   sprite 91
 
-  register {
-    'map: "prontera",
-    'coordinates: {106, 116},
-    'direction: 'east
-  }
+  def setup
+    register {
+      'map: "prontera",
+      'coordinates: {106, 116},
+      'direction: 'east
+    }
+  end
 
   def main
     say display_name
@@ -127,11 +137,13 @@ module YuPi
   name "YuPi"
   sprite 102
 
-  register {
-    'map: "prontera",
-    'coordinates: {160, 133},
-    'direction: 'west
-  }
+  def setup
+    register {
+      'map: "prontera",
+      'coordinates: {160, 133},
+      'direction: 'west
+    }
+  end
 
   def main
     say display_name
@@ -155,11 +167,13 @@ module YuNa
   name "YuNa"
   sprite 700
 
-  register {
-    'map: "prontera",
-    'coordinates': {149, 202},
-    'direction: 'west
-  }
+  def setup
+    register {
+      'map: "prontera",
+      'coordinates: {149, 202},
+      'direction: 'west
+    }
+  end
 
   def main
     say display_name
