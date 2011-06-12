@@ -313,7 +313,10 @@ module LibraryGirl
   end
 
   def main
-    % TODO
+    say "[Library Girl Ellen]"
+    say "Here in the Eastern branch of the Prontera Library, we provide Monster Encyclopedias in which creatures are organized by their properties. We also have books on Merchant and Blacksmith skills."
+    say "Ooh~! The other branch of our library also has many interesting things to read! So if you get a chance, you just might want to visit."
+    close
   end
 end
 
@@ -333,7 +336,13 @@ module AnOldMan1
   end
 
   def main
-    % TODO
+    say "[Old Man]"
+    say "The Prontera Culvert sewers have been left unattended for a long time. Now that place is infested with" + colored("000077", "Thief Bugs")
+    next
+
+    say "[Old Man]"
+    say "These Thief Bugs seem to quickly grab items dropped on the ground, and then run away with them... They're even more annoying than cockroaches!!"
+    close
   end
 end
 
@@ -353,7 +362,25 @@ module AnOldMan2
   end
 
   def main
-    % TODO
+    say "[Old Man]"
+    say "I dunno if you'll believe me, but I saw the weirdest thing down in the " + colored("000077", "Culvert Sewers") + "..."
+    next
+
+    say "[Old Man]"
+    say "I've been training in the 3rd level for so long that there isn't anything that I don't know about in that area. But when I finally went to the 4th level..."
+    next
+
+    say "[Old Man]"
+    say "There, I saw a shimmering light. I was completely captivated and went to approach it. It must have been some sort of beautiful fairy..."
+    next
+
+    say "[Old Man]"
+    say "But when I got close enough, I saw it was a " + colored("000077", "Thief Bug")
+    next
+
+    say "[Old Man]"
+    say "I've never seen a Thief Bug shining with light before! Man, just when you think you've seen it all..."
+    close
   end
 end
 
@@ -373,7 +400,7 @@ module Bartender
   end
 
   def main
-    % TODO
+    % TODO: Instance Variables
   end
 end
 
@@ -413,7 +440,7 @@ module TenSue
   end
 
   def main
-    % TODO
+    % TODO: Random
   end
 end
 
@@ -433,7 +460,7 @@ module Marvin
   end
 
   def main
-    % TODO
+    % TODO: Player's gender.
   end
 end
 
