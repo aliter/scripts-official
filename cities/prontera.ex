@@ -1,4 +1,6 @@
 % Included NPCs:
+%
+%% Prontera
 % - Guard
 % - Shuger
 % - Tono
@@ -7,6 +9,25 @@
 % - YuNa
 % - Strife (Unfinished)
 % - Dairenne
+%
+%% Inside Prontera
+% - LibraryGirl
+% - AnOldMan1
+% - AnOldMan2
+% - Bartender
+% - Shevild
+% - TenSue
+% - Marvin
+% - GinedinRephere
+%
+%% Prontera Church
+% - Garnet
+% - Henson
+%
+%% Hidden Temple
+% - Soldier1
+% - Soldier2
+%
 
 
 module Guard
@@ -186,11 +207,11 @@ module YuNa
     next
 
     say display_name
-    say "Here, in Rune-Midgard, we serve Odin, the fearsome god who sacrificed one of his eyes in order to acquire wisdom.";
+    say "Here, in Rune-Midgard, we serve Odin, the fearsome god who sacrificed one of his eyes in order to acquire wisdom."
     next
 
     say display_name
-    say "The statue you see behind of me is a sculpture of mighty Odin. But, it's a shame because it's such a bad likeness.";
+    say "The statue you see behind of me is a sculpture of mighty Odin. But, it's a shame because it's such a bad likeness."
     next
 
     say display_name
@@ -198,7 +219,7 @@ module YuNa
     next
 
     say display_name
-    say "I bet the first time you saw this statue, you thought, '^3355FFOh, what a nice muscle man on a horse^000000.'";
+    say "I bet the first time you saw this statue, you thought, '^3355FFOh, what a nice muscle man on a horse^000000.'"
     next
 
     say display_name
@@ -274,51 +295,320 @@ end
 
 
 %
-%
+%% Inside Prontera
 %
 
 module LibraryGirl
+  mixin NPC
+
+  name "Library Girl"
+  sprite 71
+
+  def setup
+    register {
+      'map: "prt_in",
+      'coordinates: {178, 92},
+      'direction: 'north
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
+
 
 module AnOldMan1
+  mixin NPC
+
+  name "An Old Man"
+  sprite 56
+
+  def setup
+    register {
+      'map: "prt_in",
+      'coordinates: {47, 141},
+      'direction: 'north
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
+
 
 module AnOldMan2
+  mixin NPC
+
+  name "An Old Man"
+  sprite 54
+
+  def setup
+    register {
+      'map: "prt_in",
+      'coordinates: {26, 31},
+      'direction: 'north
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
+
 
 module Bartender
+  mixin NPC
+
+  name "Bartender"
+  sprite 61
+
+  def setup
+    register {
+      'map: "prt_in",
+      'coordinates: {180, 20},
+      'direction: 'west
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
+
 
 module Shevild
+  mixin NPC
+
+  name "Shevild"
+  sprite 87
+
+  def setup
+    register {
+      'map: "prt_in",
+      'coordinates: {173, 24},
+      'direction: 'west
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
+
 
 module TenSue
+  mixin NPC
+
+  name "TenSue"
+  sprite 97
+
+  def setup
+    register {
+      'map: "prt_in",
+      'coordinates: {177, 20},
+      'direction: 'west
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
+
 
 module Marvin
+  mixin NPC
+
+  name "Marvin"
+  sprite 80
+
+  def setup
+    register {
+      'map: "prt_in",
+      'coordinates: {177, 18},
+      'direction: 'west
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
+
 
 module GinedinRephere
+  mixin NPC
+
+  name "Ginedin Rephere"
+  sprite 55
+
+  def setup
+    register {
+      'map: "prt_in",
+      'coordinates: {284, 168},
+      'direction: 'southwest
+    }
+  end
+
+  def main
+    say "[Tailor Ginedin Rephere]"
+    say "11..."
+    say "12..."
+    say "Mmm, good. I think I'll be able to finish before tonight's party."
+    next
+
+    say "[Tailor Ginedin Rephere]"
+    say "Oh! I didn't realize I had a guest. How may I help you?"
+    next
+
+    menu {
+      "Talk": do
+        say "[Tailor Ginedin Rephere]"
+        say "Life may have gotten a little better, but receiving all these orders? *Whew!* Young ladies these days must be very well off, so my services may no longer be a luxury."
+        next
+
+        say "[Tailor Ginedin Rephere]"
+        say "Well, people like them probably further the pursuit of beauty and fashion. But, of course, that's only my opinion."
+        next
+
+        say "[Tailor Ginedin Rephere]"
+        say "I believe for us humans, clothes are one of the few ways to show our personality, style, and beauty."
+        next
+
+        say "[Tailor Ginedin Rephere]"
+        say "Considering this, I personally think my job is very helpful and rather fancy. This in itself makes it all worthwhile. Coarse fabric and rough leather burst with energy and life when colored..."
+        next
+
+        say "[Tailor Ginedin Rephere]"
+        say "It is a very hard and tedious process, but the happiness and delight you feel when your clothes are done makes up for all the hard work."
+        close
+      end,
+
+      "Dye Clothing": do
+        say "[Tailor Ginedin Rephere]"
+        say "Ah...!"
+        say "You came to dye"
+        say "your clothes as well."
+        next
+
+        say "[Tailor Ginedin Rephere]"
+        say "But... I'm so sorry."
+        say "I don't have enough time to dye your clothes right now. I have so many orders that are still waiting to be done."
+        next
+
+        say "[Tailor Ginedin Rephere]"
+        say "I'm sorry for the inconvenience, but could you come back again next time?"
+        close
+      end,
+
+      "Cancel": do
+        say "[Tailor Ginedin Rephere]"
+        say "Feel free to take your time and relax here. I apologize that I have nothing to serve you, though."
+        close
+      end
+    }
+  end
 end
 
 
 %
-%
+%% Prontera Church
 %
 
 module Garnet
+  mixin NPC
+
+  name "Garnet"
+  sprite 67
+
+  def setup
+    register {
+      'map: "prt_church",
+      'coordinates: {103, 76},
+      'direction: 'north
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
+
 
 module Henson
+  mixin NPC
+
+  name "Henson"
+  sprite 120
+
+  def setup
+    register {
+      'map: "prt_church",
+      'coordinates: {103, 71},
+      'direction: 'north
+    }
+  end
+
+  def main
+    % TODO
+  end
 end
 
 
 %
-%
+%% Hidden Temple
 %
 
 module Soldier1
+  mixin NPC
+
+  name "Soldier"
+  sprite 105
+
+  def setup
+    register {
+      'map: "prt_maze02",
+      'coordinates: {100, 69},
+      'direction: 'north
+    }
+  end
+
+  def main
+    say display_name
+    say "H-hey! What are you doing here?!"
+    next
+
+    say display_name
+    say "Don't you know there's a Demon living in this forest?! I can't guarantee your safety if you go in!"
+    close
+  end
 end
 
+
 module Soldier2
+  mixin NPC
+
+  name "Soldier"
+  sprite 105
+
+  def setup
+    register {
+      'map: "prt_maze02",
+      'coordinates: {110, 69},
+      'direction: 'north
+    }
+  end
+
+  def main
+    say display_name
+    say "*Sigh...* The last guy that entered this place haven't come back at all. He didn't listen to me and went in to gather Herbs or something dumb like that..."
+    next
+
+    say display_name
+    say "Whaaaat a stupid guy. Why would anyone want to throw his life away just to collect some silly Herbs?"
+    close
+  end
 end
+
