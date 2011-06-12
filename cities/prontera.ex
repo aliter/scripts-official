@@ -30,6 +30,10 @@
 %
 
 
+%
+%% Prontera
+%
+
 module Guard
   mixin NPC
 
@@ -460,7 +464,7 @@ module Marvin
   end
 
   def main
-    % TODO: Player's gender.
+    % TODO: Player's Gender
   end
 end
 

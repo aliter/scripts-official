@@ -1,8 +1,20 @@
 % Included NPCs:
+%
+%% Payon
 % - Lady
 % - YoungMan1
 % - YoungMan2
+% - Guardsman
+% - Woman1
+% - Woman2
+% - Drunkard
+% - MonsterScholar
+%
 
+
+%
+%% Payon
+%
 
 module Lady
   mixin NPC
@@ -144,3 +156,109 @@ module YoungMan2
     close
   end
 end
+
+
+module Guardsman
+  mixin NPC
+
+  name "Guardsman"
+  sprite 708
+
+  def setup
+    register {
+      'map: "payon",
+      'coordinates: {158, 246},
+      'direction: 'southwest
+    }
+  end
+
+  def main
+    % TODO: OnTouch (or something similar)
+  end
+end
+
+
+module Woman1
+  mixin NPC
+
+  name "Woman"
+  sprite 66
+
+  def setup
+    register {
+      'map: "payon",
+      'coordinates: {249, 156},
+      'direction: 'north
+    }
+  end
+
+  def main
+    % TODO: Player's Gender
+  end
+end
+
+
+module Woman2
+  mixin NPC
+
+  name "Woman"
+  sprite 66
+
+  def setup
+    register {
+      'map: "payon",
+      'coordinates: {246, 158},
+      'direction: 'southeast
+    }
+  end
+
+  def main
+    % TODO: Player's Gender
+  end
+end
+
+
+module Drunkard
+  mixin NPC
+
+  name "Drunkard"
+  sprite 120
+
+  def setup
+    register {
+      'map: "payon",
+      'coordinates: {210, 110},
+      'direction: 'northwest
+    }
+  end
+
+  def main
+    % TODO: Player's Class
+  end
+end
+
+
+module MonsterScholar
+  mixin NPC
+
+  name "Monster Scholar"
+  sprite 98
+
+  def setup
+    register {
+      'map: "payon",
+      'coordinates: {132, 235},
+      'direction: 'southwest
+    }
+  end
+
+  def main
+    % TODO
+  end
+end
+
+
+%
+%% Inside Payon
+%
+
