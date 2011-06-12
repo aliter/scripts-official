@@ -271,3 +271,54 @@ module Dairenne
     }
   end
 end
+
+
+%
+%
+%
+
+module LibraryGirl
+end
+
+module AnOldMan1
+end
+
+module AnOldMan2
+end
+
+module Bartender
+end
+
+module Shevild
+end
+
+module TenSue
+end
+
+module Marvin
+end
+
+module GinedinRephere
+end
+
+
+%
+%
+%
+
+module Garnet
+end
+
+module Henson
+end
+
+
+%
+%
+%
+
+module Soldier1
+end
+
+module Soldier2
+end
