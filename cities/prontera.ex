@@ -5,6 +5,8 @@
 % - Merideth
 % - YuPi
 % - YuNa
+% - Strife (Unfinished)
+% - Dairenne
 
 
 module Guard
@@ -202,5 +204,70 @@ module YuNa
     say display_name
     say "But this statue is obviously not muscular enough, not godly enough to fairly represent a god! Maybe if he had a halo?"
     close
+  end
+end
+
+
+module Strife
+  mixin NPC
+
+  name "Strife"
+  sprite 48
+
+  def setup
+    register {
+      'map: "prontera",
+      'coordinates: {216, 70},
+      'direction: 'west
+    }
+  end
+
+  def main
+    % TODO
+  end
+end
+
+
+module Dairenne
+  mixin NPC
+
+  name "Dairenne"
+  sprite 90
+
+  def setup
+    register {
+      'map: "prontera",
+      'coordinates: {78, 150},
+      'direction: 'southwest
+    }
+  end
+
+  def main
+    say display_name
+    say "Ahh..."
+    say "The streets are too crowded these days. *cough cough* Look at all this dust, not everything about living in the capital city is good. Anyway, may I help you?"
+    next
+
+    menu {
+      "Talk": do
+        say display_name
+        say "I wonder if you are interested in parties or dresses. Hehehe. These days, the hot topic is definitely the colorful, extravagent, magnificent dresses you can wear."
+        next
+
+        say display_name
+        say "To get such dazzling colors, I heard you have to use a dye that you can only get in Morroc. But I also heard that the price is beyond imagination."
+        next
+
+        say display_name
+        say "Aahhhh~ I wish I could wear such a dress. Even if it's just once..."
+        close
+      end,
+
+      "Cancel": do
+        say display_name
+        say "Eh~? Why talk to me in the first place? What a strange person."
+        close
+      end
+    }
   end
 end
