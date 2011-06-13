@@ -6,6 +6,8 @@
 end
 
 % Payon
-[Lady, YoungMan1, YoungMan2].each -> (npc)
+[Lady, YoungMan1, YoungMan2, Guardsman, Woman1, Woman2, Drunkard,
+ MonsterScholar, Waitress, ChiefGuardsman, ArcherZakk, ArcherWolt, Chief,
+ Guard, ArcherJoe].each -> (npc)
   npc.setup
 end
