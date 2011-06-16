@@ -183,8 +183,16 @@ module Payon
       }
     end
 
-    def main
-      % TODO: OnTouch (or something similar)
+    def touch
+      say display_name
+      say "This is the Central Palace of Payon. This place is open to the public, but in accordance with our laws, you must behave in an orderly fashion once inside."
+      next
+
+      say display_name
+      say "In the interest of protecting the peace, we will disarm your equipment once you enter."
+      say "Your cooperation is much appreciated."
+      % TODO: "nude" (?) is in the eA version.
+      close
     end
   end
 
@@ -380,8 +388,19 @@ module Payon
       }
     end
 
-    def main
-      % TODO: OnTouch (or something similar)
+    def touch
+      say display_name
+      say "What brings you here?"
+      next
+
+      say display_name
+      say "I can see that you are not one of the Payon locals. I would just like to remind you to conduct yourself in an orderly manner. Remember, you are a guest here."
+      next
+
+      say display_name
+      say "In the interest of protecting the public peace, I will disarm your equipment. Thank you for your cooperation."
+      % TODO: "nude" (?) is in the eA version.
+      close
     end
   end
 
