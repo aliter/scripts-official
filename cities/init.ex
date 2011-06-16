@@ -1,13 +1,17 @@
 % Prontera
-[Guard, Shuger, Tono, Merideth, YuPi, YuNa, Strife, Dairenne,
- LibraryGirl, AnOldMan1, AnOldMan2, Bartender, Shevild, TenSue, Marvin,
- GinedinRephere, Garnet, Henson, Soldier1, Soldier2].each -> (npc)
+[Prontera::Guard, Prontera::Shuger, Prontera::Tono, Prontera::Merideth,
+ Prontera::YuPi, Prontera::YuNa, Prontera::Strife,
+ Prontera::Dairenne, Prontera::LibraryGirl, Prontera::AnOldMan1,
+ Prontera::AnOldMan2, Prontera::Bartender, Prontera::Shevild, Prontera::TenSue,
+ Prontera::Marvin, Prontera::GinedinRephere, Prontera::Garnet,
+ Prontera::Henson, Prontera::Soldier1, Prontera::Soldier2].each -> (npc)
   npc.setup
 end
 
 % Payon
-[Lady, YoungMan1, YoungMan2, Guardsman, Woman1, Woman2, Drunkard,
- MonsterScholar, Waitress, ChiefGuardsman, ArcherZakk, ArcherWolt, Chief,
- Guard, ArcherJoe].each -> (npc)
+[Payon::Lady, Payon::YoungMan1, Payon::YoungMan2, Payon::Guardsman,
+ Payon::Woman1, Payon::Woman2, Payon::Drunkard, Payon::MonsterScholar,
+ Payon::Waitress, Payon::ChiefGuardsman, Payon::ArcherZakk, Payon::ArcherWolt,
+ Payon::Chief, Payon::Guard, Payon::ArcherJoe].each -> (npc)
   npc.setup
 end
